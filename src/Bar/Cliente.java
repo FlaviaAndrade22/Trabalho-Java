@@ -6,7 +6,6 @@ public class Cliente {
     public int qtdRefrigerantes;
     public int qtdEspetinhos;
 
-    // Construtor
     public Cliente(char sexo, int qtdCervejas, int qtdRefrigerantes, int qtdEspetinhos) {
         this.sexo = sexo;
         this.qtdCervejas = qtdCervejas;
@@ -14,7 +13,6 @@ public class Cliente {
         this.qtdEspetinhos = qtdEspetinhos;
     }
 
-    // Getters
     public char getSexo() {
         return sexo;
     }
