@@ -6,7 +6,6 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Coleta de informações do cliente
         System.out.print("Sexo (F ou M): ");
         char sexo = scanner.next().charAt(0);
 
@@ -19,10 +18,8 @@ public class Main {
         System.out.print("Quantidade de espetinhos: ");
         int qtdEspetinhos = scanner.nextInt();
 
-        // Criação do objeto Cliente
         Cliente cliente = new Cliente(sexo, qtdCervejas, qtdRefrigerantes, qtdEspetinhos);
 
-        // Exibição do relatório de pagamento
         Bar.exibirRelatorio(cliente);
 
         scanner.close();
